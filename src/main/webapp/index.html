@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>Title</title>
+</head>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/simulator.js"></script>
+
+<body>
+    <div class="render-form">
+        <input type="text" maxlength="11" oninput="value=value.replace(/[^\d]/g,'')"
+               placeholder="请输入您的电话号码"
+               id="mobiles" />
+        <button onclick="checkPhone()">查询</button>
+    </div>
+    <div>
+        <span id="getValue"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bitefu.mapper.InsertMobileMapper">
+
+
+
+    <insert id="InsertPhoneByMySql" parameterType="com.example.bitefu.model.Shouji">
+     insert into phone(isp,province,city,postcode,citycode,areacode,status,mobile)
+      values(
+       #{mobile.isp},#{mobile.province},#{mobile.city},
+       #{mobile.postcode}, #{mobile.citycode},
+       #{mobile.areacode},
+       #{mobile.status},#{mobile.mobile}
+    )
+    </insert>
+</mapper>
